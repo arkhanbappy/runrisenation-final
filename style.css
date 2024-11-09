@@ -1,0 +1,146 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Lucida Sans', sans-serif;
+  line-height: 1.6;
+  background-color: black;
+  color: #ddd;
+  
+}
+
+/* Header */
+header {
+  text-align: center;
+  background-color: #333;
+  color: #fff;
+  padding: 1em 0;
+}
+
+header .logo img {
+  max-width: 100px;
+}
+
+header h1 {
+  font-size: 2em;
+}
+
+header h4 {
+  font-weight: 300;
+  margin-top: 1px;
+  font-style: italic;
+}
+
+header nav ul {
+  list-style: inside;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+header nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Image Slider */
+.slider {
+  position: relative;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.slides {
+  display: flex;
+  transition: transform 0.3s ease;
+}
+
+.slide {
+  min-width: 100%;
+}
+
+.slide img {
+  width: 100%;
+  height: 400px;
+}
+
+.prev, .next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 24px;
+  border: none;
+}
+
+.prev { left: 10px; }
+.next { right: 10px; }
+
+/* Description Section */
+.description {
+  padding: 2em;
+  text-align: center;
+}
+
+/* Founders Section */
+.founders {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  padding: 2em;
+  text-align: center; 
+}
+
+.founder img {
+  border-radius: 100%;
+  width: 200px;
+  height: 200px;
+  object-fit: fill;
+}
+
+.founder p {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+/* Events Table */
+.events {
+  padding: 2em;
+}
+
+.events table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: center;
+}
+
+.events table, th, td {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+.events th {
+  background-color: #333;
+  color: white;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 1em;
+  background-color: #333;
+  color: white;
+}
+
+.footer-links a {
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+}
